@@ -39,8 +39,20 @@
     color: #fff;
 }
 
+.header img {
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+}
+
 .header h1 {
-    font-size: 50px;
+    font-size: 40px;
+}
+
+.header-p {
+    display: flex;
+    justify-content: center;
+    width: 320px;
 }
 
 .rong {
@@ -82,7 +94,7 @@
 
 .body h1 {
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .box-img {
@@ -94,7 +106,7 @@
 }
 
 .img {
-    width: 381px;
+    width: 382px;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -135,9 +147,9 @@
 }
 
 .div {
-    width: 45%;
+    width: 60%;
     display: flex;
-    gap: 80px;
+    gap: 60px;
     padding: 30px;
 }
 
@@ -205,7 +217,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .footer-box {
@@ -243,5 +254,60 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
 
+.container {
+    width: 100%;
+}
+
+.button{
+    display: none;
+    color: #fff;
+}
+
+@media screen and (max-width: 480px) {
+    .navbar {
+        padding: 15px 20px;
+
+    }
+
+    .navbar h3 {
+        font-size: 20px;
+    }
+
+    .navbar-1 {
+        display: none;
+    }
+
+    .header h1 {
+        text-align: center;
+    }
+
+    .div {
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        width: 90%;
+    }
+
+    .btn-box {
+        display: flex;
+    }
+
+    .box-footer {
+        display: flex;
+        align-items: center;
+        width: 80%;
+        gap: 20px;
+    }
+
+    .footer-box {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .button{
+        display: block; 
+    }
 }
